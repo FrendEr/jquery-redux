@@ -5,20 +5,21 @@ export default function createConnect(store = {
   subscribe = noop,
   getState = noop,
 }) {
-  return function connect(mapStateToProps, render) {
+  return function connect(mapStateToProps, mapDispatchToProps, render) {
     let props = mapStateTopProps(store.getState());
+    const events = mapDispatchToProps(dispatch);
     store.subscribe(rerender);
 
-    function rerender () {
+    function rerender() {
       const newProps = mapStateTopProps(store.getState());
       if (shallowEqual(props, newProps)) {
         return;
       }
-      render(newProps);
+      render(newProps, events);
       props = newProps;
     }
 
-    render(props);
+    render(props, events);
     return rerender;
   }
 }
