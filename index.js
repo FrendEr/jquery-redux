@@ -1,5 +1,5 @@
-import connect from './connect';
+import createConnect from './connect';
 
 export {
-  connect
+  createConnect
 };
