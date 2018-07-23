@@ -1,0 +1,23 @@
+{
+  "name": "jquery-redux",
+  "version": "0.0.1",
+  "description": "jQuery bindings for Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrendEr/jquery-redux.git"
+  },
+  "keywords": [
+    "jQuery",
+    "Redux"
+  ],
+  "author": "FrendEr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrendEr/jquery-redux/issues"
+  },
+  "homepage": "https://github.com/FrendEr/jquery-redux#readme"
+}
