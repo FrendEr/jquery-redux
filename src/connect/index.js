@@ -2,16 +2,17 @@ import shallowEqual from '../utils/shallowEqual';
 const noop = () => {};
 
 export default function createConnect(store = {
-  subscribe = noop,
-  getState = noop,
+  subscribe: noop,
+  getState: noop,
+  dispatch: noop,
 }) {
   return function connect(mapStateToProps, mapDispatchToProps, render) {
-    let props = mapStateTopProps(store.getState());
-    const events = mapDispatchToProps(dispatch);
+    let props = mapStateToProps(store.getState());
+    const events = mapDispatchToProps(store.dispatch);
     store.subscribe(rerender);
 
     function rerender() {
-      const newProps = mapStateTopProps(store.getState());
+      const newProps = mapStateToProps(store.getState());
       if (shallowEqual(props, newProps)) {
         return;
       }
