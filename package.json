@@ -1,6 +1,6 @@
 {
   "name": "jquery-redux",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "jQuery bindings for Redux",
   "main": "lib/index.js",
   "scripts": {
