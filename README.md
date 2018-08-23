@@ -110,3 +110,27 @@ module.exports = function(data) {
 * **actionsInit**
 
 事件绑定初始化函数，接收 `mapDispatchToProps` 的返回值作为参数。该函数用来进行事件绑定相关操作，因为接收的参数可以让我们触发 `action`，所以 DOM 相关事件以及请求相关的操作都在该函数中执行。同时，该函数只会在组件渲染执行一次，后续将不会再次执行
+
+## Example
+
+该组件已在生产环境使用，以下是从项目中简化出来的示例代码
+
+* 获取代码仓库
+
+```
+$ git clone https://github.com/FrendEr/jquery-redux.git
+$ cd jquery-redux/example
+```
+
+* 安装依赖
+
+```
+$ yarn install
+```
+
+* 本地运行
+
+```
+$ npm start
+$ open http://localhost:8080/src/
+```

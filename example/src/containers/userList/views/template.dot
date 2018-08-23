@@ -1,0 +1,8 @@
+<button id="fetchBtn">发送请求</button>
+<ul class="user-list">
+  {{?it.userList}}
+    {{~it.userList :item:index}}
+      <li>{{=item.login}}</li>
+    {{~}}
+  {{?}}
+</ul>
