@@ -101,7 +101,7 @@ module.exports = function(data) {
 
 * **mapDispatchToProps**
 
-与 `react-redux` 中的 API 一致，接收 `store.dispatch` 方法，通过传入该方法，我们可以调用到已定义的 `action creators`
+与 `react-redux` 中的 API 一致，接收 `store.dispatch` 方法，通过传入该方法，我们可以调用到已定义的 `action creators`，并返回供组件调用的方法
 
 * **render**
 
