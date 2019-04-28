@@ -6,7 +6,7 @@ jQuery bindings for Redux.
 
 ## Installation
 
-```sh
+```shell
 npm install --save jquery-redux
 ```
 
@@ -16,7 +16,7 @@ npm install --save jquery-redux
 
 创建用来绑定 `store` 与 `component` 的 **connect** 函数
 
-```
+```javascript
 import { createConnect } from 'jquery-redux';
 import createSagaMiddleware from 'redux-saga';
 import rootSaga from '../sagas';
@@ -34,7 +34,7 @@ export default connect;
 
 传入需要与 `store` 关联的数据字段 *connectKeys*、数据映射方法 *mapStateToProps* 以及事件映射方法 *mapDispatchToProps*，返回一个用于组件初始化的函数，并接收两个函数作为参数：*render* (组件渲染)、*actionsInit* (事件绑定)
 
-```
+```javascript
 import $ from 'jquery';
 import './style.less';
 import Template from './views/template.dot';
@@ -117,20 +117,20 @@ module.exports = function(data) {
 
 * 获取代码仓库
 
-```
+```shell
 $ git clone https://github.com/FrendEr/jquery-redux.git
 $ cd jquery-redux/example
 ```
 
 * 安装依赖
 
-```
+```shell
 $ yarn install
 ```
 
 * 本地运行
 
-```
+```shell
 $ npm start
 $ open http://localhost:8080/src/
 ```
